@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		807216991B5920A200A3737E /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807216981B5920A200A3737E /* ConversationListViewController.swift */; };
 		808E21AB1B4CFFAB006B9507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */; };
 		808E21AD1B4CFFAB006B9507 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E21AC1B4CFFAB006B9507 /* ViewController.swift */; };
 		808E21B01B4CFFAB006B9507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E21AE1B4CFFAB006B9507 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		804A91CB1B4D0E290036ED2B /* CloudTMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudTMTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		807216981B5920A200A3737E /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
 		808E21A51B4CFFAB006B9507 /* CloudTMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudTMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E21A91B4CFFAB006B9507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				808E21A81B4CFFAB006B9507 /* Supporting Files */,
 				808E21CA1B4D0848006B9507 /* Podfile */,
 				804A91CB1B4D0E290036ED2B /* CloudTMTest-Bridging-Header.h */,
+				807216981B5920A200A3737E /* ConversationListViewController.swift */,
 			);
 			path = CloudTMTest;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B8BB251B58ED0400D2E98A /* ConversationViewController.swift in Sources */,
+				807216991B5920A200A3737E /* ConversationListViewController.swift in Sources */,
 				808E21AD1B4CFFAB006B9507 /* ViewController.swift in Sources */,
 				808E21AB1B4CFFAB006B9507 /* AppDelegate.swift in Sources */,
 			);
