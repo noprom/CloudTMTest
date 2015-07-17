@@ -21,8 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         RCIM.sharedRCIM().initWithAppKey("p5tvi9dst0ot4", deviceToken: deviceTokenCache)
         
         //  用token测试连接
-        RCIM.sharedRCIM().connectWithToken("LKTCi5f8ckTkedsSpEpFs9QgTzFEKukfUOAiqbLfO/olaBTWvLyS5yyKK+wN3R+aj55qv4ETnbrb/p6qEF3E5w==", success: { (_) -> Void in
+        RCIM.sharedRCIM().connectWithToken("aOie0oGDxIhZuUwg4hX5xxvCsfV0IEBWQxMMac9/Ex92VqK/Dg4tv9OJzIctO4STjwpIro5qiP5tifXz6ehzhg==", success: { (_) -> Void in
             println("连接成功")
+            
+            // 当前登录的用户
+            let currentUser = RCUserInfo(userId: noprom, name: "小王", portrait: "http://www.huntdreams.com/templets/hunt/images/2.png"))
+            
+            
+            RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
+            
+            
         }, error: { (_) -> Void in
             println("连接失败")
         }) { () -> Void in
