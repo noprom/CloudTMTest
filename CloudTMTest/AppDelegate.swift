@@ -9,16 +9,41 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
 
     var window: UIWindow?
 
+    /**
+    获取用户信息
+    
+    :param: userId     用户id
+    :param: completion
+    */
+    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
+        let userInfo         = RCUserInfo()
+        userInfo.userId      = userId
+        switch(userId){
+            case "noprom":
+        userInfo.name        = "noprom"
+        userInfo.portraitUri = "http://www.huntdreams.com/templets/hunt/images/1.png"
 
+            case "noprom2":
+        userInfo.name        = "noprom2"
+        userInfo.portraitUri = "http://www.huntdreams.com/templets/hunt/images/2.png"
+        default:
+                println("没有这个用户哟")
+        }
+        return completion(userInfo)
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // 查询保存的token
         let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
         //  初始化融云模块
         RCIM.sharedRCIM().initWithAppKey("p5tvi9dst0ot4", deviceToken: deviceTokenCache)
+        
+        // 设置用户信息提供者为自己
+        RCIM.sharedRCIM().userInfoDataSource = self
         
         //  用token测试连接
         RCIM.sharedRCIM().connectWithToken("aOie0oGDxIhZuUwg4hX5xxvCsfV0IEBWQxMMac9/Ex92VqK/Dg4tv9OJzIctO4STjwpIro5qiP5tifXz6ehzhg==", success: { (_) -> Void in
