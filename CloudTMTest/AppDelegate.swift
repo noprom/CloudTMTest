@@ -25,8 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             println("连接成功")
             
             // 当前登录的用户
-            let currentUser = RCUserInfo(userId: noprom, name: "小王", portrait: "http://www.huntdreams.com/templets/hunt/images/2.png"))
-            
+            let currentUser = RCUserInfo(userId: "noprom", name: "小王", portrait: "http://www.huntdreams.com/templets/hunt/images/2.png")
             
             RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
             
