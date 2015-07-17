@@ -13,7 +13,13 @@ class ConversationViewController: RCConversationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // 初始化融云用户
+        self.targetId = RCIMClient.sharedRCIMClient().currentUserInfo.userId
+        self.userName = RCIMClient.sharedRCIMClient().currentUserInfo.name
+        self.conversationType = RCConversationType.ConversationType_PRIVATE // 私聊
+        self.title = self.userName
+        
+        self.setMessageAvatarStyle(RCUserAvatarStyle._USER_AVATAR_CYCLE) // 设置圆形边角
     }
 
     override func didReceiveMemoryWarning() {
