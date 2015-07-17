@@ -115,7 +115,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zXg-Ml-0pd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="coversation" id="Ty9-ti-8gF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p59-Yy-5gC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="p59-Yy-5gC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -173,7 +173,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XS5-QW-XfR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="contact" id="Byb-4F-VpS"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gUu-Ao-nZA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="gUu-Ao-nZA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -192,7 +192,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ORR-Gi-ksQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="serve" id="zXQ-YZ-5eb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FeS-EG-ZpF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="FeS-EG-ZpF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -211,7 +211,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cK5-9z-V6e" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gaU-fL-wjH"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0MY-B8-Hua">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="0MY-B8-Hua">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
