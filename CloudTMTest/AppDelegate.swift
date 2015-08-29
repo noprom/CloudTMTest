@@ -9,56 +9,29 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-    /**
-    获取用户信息
-    
-    :param: userId     用户id
-    :param: completion
-    */
-    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
-        let userInfo         = RCUserInfo()
-        userInfo.userId      = userId
-        switch(userId){
-            case "noprom":
-        userInfo.name        = "noprom"
-        userInfo.portraitUri = "http://www.huntdreams.com/templets/hunt/images/1.png"
-
-            case "noprom2":
-        userInfo.name        = "noprom2"
-        userInfo.portraitUri = "http://www.huntdreams.com/templets/hunt/images/2.png"
-        default:
-                println("没有这个用户哟")
-        }
-        return completion(userInfo)
-    }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // 查询保存的token
         let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
         //  初始化融云模块
         RCIM.sharedRCIM().initWithAppKey("p5tvi9dst0ot4", deviceToken: deviceTokenCache)
         
-        // 设置用户信息提供者为自己
-        RCIM.sharedRCIM().userInfoDataSource = self
-        
         //  用token测试连接
-        RCIM.sharedRCIM().connectWithToken("aOie0oGDxIhZuUwg4hX5xxvCsfV0IEBWQxMMac9/Ex92VqK/Dg4tv9OJzIctO4STjwpIro5qiP5tifXz6ehzhg==", success: { (_) -> Void in
-            println("连接成功")
+        RCIM.sharedRCIM().connectWithToken("vG3qJ2oRhaRbU2orLofNLBvCsfV0IEBWQxMMac9/Ex/kusEyUgdPWYdfoxU13c31t873u7CzQ5JtifXz6ehzhg==", success: { (_) -> Void in
             
             // 当前登录的用户
-            let currentUser = RCUserInfo(userId: "noprom", name: "小王", portrait: "http://www.huntdreams.com/templets/hunt/images/2.png")
+            let currentUser = RCUserInfo(userId: "noprom", name: "noprom", portrait: "http://p3.gexing.com/G1/M00/13/89/rBACE1JGVebiPiPmAAAS9SdWJFY114_200x200_3.jpg?recache=20131108")
             
             RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
             
-            
-        }, error: { (_) -> Void in
-            println("连接失败")
-        }) { () -> Void in
-            println("token不正确")
+            }, error: { (_) -> Void in
+                print("连接失败")
+            }) { () -> Void in
+                print("token不正确")
         }
         
         return true
@@ -79,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,RCIMUserInfoDataSource {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        // Restart any tasks that were paused (or not yet started) while the application was iactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
     func applicationWillTerminate(application: UIApplication) {
