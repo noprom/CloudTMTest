@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8061276A1B919FC700B942A1 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806127691B919FC700B942A1 /* ConversationListViewController.swift */; };
 		808E21AB1B4CFFAB006B9507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */; };
 		808E21B01B4CFFAB006B9507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E21AE1B4CFFAB006B9507 /* Main.storyboard */; };
 		808E21B21B4CFFAB006B9507 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808E21B11B4CFFAB006B9507 /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		804A91CB1B4D0E290036ED2B /* CloudTMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudTMTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		806127691B919FC700B942A1 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
 		808E21A51B4CFFAB006B9507 /* CloudTMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudTMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E21A91B4CFFAB006B9507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */,
 				80B8BB241B58ED0400D2E98A /* ConversationViewController.swift */,
+				806127691B919FC700B942A1 /* ConversationListViewController.swift */,
 				808E21AE1B4CFFAB006B9507 /* Main.storyboard */,
 				808E21B11B4CFFAB006B9507 /* Images.xcassets */,
 				808E21B31B4CFFAB006B9507 /* LaunchScreen.xib */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8061276A1B919FC700B942A1 /* ConversationListViewController.swift in Sources */,
 				80B8BB251B58ED0400D2E98A /* ConversationViewController.swift in Sources */,
 				808E21AB1B4CFFAB006B9507 /* AppDelegate.swift in Sources */,
 			);
