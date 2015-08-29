@@ -9,29 +9,62 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
 
     var window: UIWindow?
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // 获取用户信息
+    func getUserInfoWithUserId(userId: String!, completion: ((RCUserInfo!) -> Void)!) {
         
+        print("＝＝＝＝＝调用getUserInfoWithUserId＝＝＝＝＝")
+        
+        let userInfo = RCUserInfo()
+        userInfo.userId = userId
+        
+        switch userId {
+            case "noprom":
+                print("＝＝＝＝＝noprom＝＝＝＝＝")
+                userInfo.name = "noprom"
+                userInfo.portraitUri = "http://p3.gexing.com/G1/M00/13/89/rBACE1JGVebiPiPmAAAS9SdWJFY114_200x200_3.jpg?recache=20131108"
+            case "noprom2":
+                userInfo.name = "noprom2"
+                userInfo.portraitUri = "http://img4.duitang.com/uploads/item/201407/20/20140720085149_zmhzh.jpeg"
+            default:
+            print("没有该用户")
+        }
+        return completion(userInfo)
+    }
+    
+    func connectServer(completion:()-> Void) {
         // 查询保存的token
         let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
+        
         //  初始化融云模块
         RCIM.sharedRCIM().initWithAppKey("p5tvi9dst0ot4", deviceToken: deviceTokenCache)
         
         //  用token测试连接
         RCIM.sharedRCIM().connectWithToken("vG3qJ2oRhaRbU2orLofNLBvCsfV0IEBWQxMMac9/Ex/kusEyUgdPWYdfoxU13c31t873u7CzQ5JtifXz6ehzhg==", success: { (_) -> Void in
-            
-            // 当前登录的用户
-            let currentUser = RCUserInfo(userId: "noprom", name: "noprom", portrait: "http://p3.gexing.com/G1/M00/13/89/rBACE1JGVebiPiPmAAAS9SdWJFY114_200x200_3.jpg?recache=20131108")
-            RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
-            
+                print("连接成功1!")
+                // 当前登录的用户
+                let currentUser = RCUserInfo(userId: "noprom", name: "noprom", portrait: "http://p3.gexing.com/G1/M00/13/89/rBACE1JGVebiPiPmAAAS9SdWJFY114_200x200_3.jpg?recache=20131108")
+                RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
+
+                // 在主线程中执行
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    completion()
+                })
+           
             }, error: { (_) -> Void in
                 print("连接失败")
             }) { () -> Void in
                 print("token不正确")
         }
+    }
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // 设置用户信息提供者为自己
+        RCIM.sharedRCIM().userInfoDataSource = self
         
         return true
     }

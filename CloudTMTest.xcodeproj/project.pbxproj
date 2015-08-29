@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8061276A1B919FC700B942A1 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806127691B919FC700B942A1 /* ConversationListViewController.swift */; };
-		8061276D1B91B05D00B942A1 /* conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8061276B1B91B05D00B942A1 /* conversation.storyboard */; };
-		806127701B91B18500B942A1 /* contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8061276E1B91B18500B942A1 /* contact.storyboard */; };
-		806127731B91B19900B942A1 /* serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806127711B91B19900B942A1 /* serve.storyboard */; };
-		806127761B91B1AB00B942A1 /* about.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806127741B91B1AB00B942A1 /* about.storyboard */; };
 		808E21AB1B4CFFAB006B9507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */; };
 		808E21B01B4CFFAB006B9507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E21AE1B4CFFAB006B9507 /* Main.storyboard */; };
 		808E21B21B4CFFAB006B9507 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808E21B11B4CFFAB006B9507 /* Images.xcassets */; };
@@ -35,10 +31,6 @@
 /* Begin PBXFileReference section */
 		804A91CB1B4D0E290036ED2B /* CloudTMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudTMTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		806127691B919FC700B942A1 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
-		8061276C1B91B05D00B942A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/conversation.storyboard; sourceTree = "<group>"; };
-		8061276F1B91B18500B942A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/contact.storyboard; sourceTree = "<group>"; };
-		806127721B91B19900B942A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/serve.storyboard; sourceTree = "<group>"; };
-		806127751B91B1AB00B942A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/about.storyboard; sourceTree = "<group>"; };
 		808E21A51B4CFFAB006B9507 /* CloudTMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudTMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E21A91B4CFFAB006B9507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,10 +102,6 @@
 				80B8BB241B58ED0400D2E98A /* ConversationViewController.swift */,
 				806127691B919FC700B942A1 /* ConversationListViewController.swift */,
 				808E21AE1B4CFFAB006B9507 /* Main.storyboard */,
-				806127741B91B1AB00B942A1 /* about.storyboard */,
-				806127711B91B19900B942A1 /* serve.storyboard */,
-				8061276E1B91B18500B942A1 /* contact.storyboard */,
-				8061276B1B91B05D00B942A1 /* conversation.storyboard */,
 				808E21B11B4CFFAB006B9507 /* Images.xcassets */,
 				808E21B31B4CFFAB006B9507 /* LaunchScreen.xib */,
 				808E21A81B4CFFAB006B9507 /* Supporting Files */,
@@ -242,12 +230,8 @@
 			files = (
 				808E21B01B4CFFAB006B9507 /* Main.storyboard in Resources */,
 				808E21B51B4CFFAB006B9507 /* LaunchScreen.xib in Resources */,
-				806127761B91B1AB00B942A1 /* about.storyboard in Resources */,
 				808E21CB1B4D0848006B9507 /* Podfile in Resources */,
 				808E21B21B4CFFAB006B9507 /* Images.xcassets in Resources */,
-				806127731B91B19900B942A1 /* serve.storyboard in Resources */,
-				8061276D1B91B05D00B942A1 /* conversation.storyboard in Resources */,
-				806127701B91B18500B942A1 /* contact.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,38 +307,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8061276B1B91B05D00B942A1 /* conversation.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8061276C1B91B05D00B942A1 /* Base */,
-			);
-			name = conversation.storyboard;
-			sourceTree = "<group>";
-		};
-		8061276E1B91B18500B942A1 /* contact.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8061276F1B91B18500B942A1 /* Base */,
-			);
-			name = contact.storyboard;
-			sourceTree = "<group>";
-		};
-		806127711B91B19900B942A1 /* serve.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				806127721B91B19900B942A1 /* Base */,
-			);
-			name = serve.storyboard;
-			sourceTree = "<group>";
-		};
-		806127741B91B1AB00B942A1 /* about.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				806127751B91B1AB00B942A1 /* Base */,
-			);
-			name = about.storyboard;
-			sourceTree = "<group>";
-		};
 		808E21AE1B4CFFAB006B9507 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -462,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CloudTMTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTMTest/CloudTMTest-Bridging-Header.h";
@@ -477,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CloudTMTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTMTest/CloudTMTest-Bridging-Header.h";
