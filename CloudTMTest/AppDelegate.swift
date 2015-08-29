@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             // 当前登录的用户
             let currentUser = RCUserInfo(userId: "noprom", name: "noprom", portrait: "http://p3.gexing.com/G1/M00/13/89/rBACE1JGVebiPiPmAAAS9SdWJFY114_200x200_3.jpg?recache=20131108")
-            
             RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
             
             }, error: { (_) -> Void in

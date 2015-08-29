@@ -12,7 +12,14 @@ class ConversationViewController: RCConversationViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // 设置与当前登陆用户聊天的对象
+        let currentUser = RCIMClient.sharedRCIMClient().currentUserInfo
+        self.targetId = currentUser.userId
+        self.userName = currentUser.name
+        self.conversationType = RCConversationType.ConversationType_PRIVATE
+        self.title = currentUser.name
+        self.setMessageAvatarStyle(.USER_AVATAR_CYCLE)
     }
 
     override func didReceiveMemoryWarning() {
