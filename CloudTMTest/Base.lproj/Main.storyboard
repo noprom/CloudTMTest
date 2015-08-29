@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="B5l-Ma-3TU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4sY-Gw-LZP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -130,7 +130,7 @@
         <!--私聊界面导航-->
         <scene sceneID="ABF-q5-aVU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hzf-NL-jZt" userLabel="私聊界面导航" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="hzf-NL-jZt" userLabel="私聊界面导航" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="yY0-YZ-3Ro">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -151,7 +151,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4c8-Fy-vjV" userLabel="会话列表导航栏" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="会话" image="coversation" id="GzN-Sr-4KA" userLabel="会话"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpF-z2-A4p">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="xpF-z2-A4p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -170,7 +170,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Scm-pA-wJE" userLabel="通讯录导航栏" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="通讯录" image="contact" id="KEG-xV-1C0" userLabel="通讯录"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Xv-uP-SDb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="2Xv-uP-SDb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -189,7 +189,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0l7-vk-uu7" userLabel="客服导航栏" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="客服" image="serve" id="lot-5u-tBz" userLabel="客服"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z9K-ey-3oD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Z9K-ey-3oD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -208,7 +208,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NBL-tF-Ap0" userLabel="关于导航栏" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="关于" image="about" id="MiY-q9-BO3" userLabel="关于"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4wo-bH-eCD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="4wo-bH-eCD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
