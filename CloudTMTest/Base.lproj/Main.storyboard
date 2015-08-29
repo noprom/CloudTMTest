@@ -59,7 +59,7 @@
                     <navigationItem key="navigationItem" title="最近会话" id="vYV-Ip-rzz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="D9W-hh-6rU">
                             <connections>
-                                <action selector="showMenu:" destination="pSu-ZG-Qcq" id="cdp-jg-eE7"/>
+                                <action selector="showMenu:" destination="pSu-ZG-Qcq" id="kPd-mq-tr2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -6,9 +6,15 @@
 // project.
 
 
+// KxMenu
+#define COCOAPODS_POD_AVAILABLE_KxMenu
+#define COCOAPODS_VERSION_MAJOR_KxMenu 1
+#define COCOAPODS_VERSION_MINOR_KxMenu 0
+#define COCOAPODS_VERSION_PATCH_KxMenu 0
+
 // RongCloudIMKit
 #define COCOAPODS_POD_AVAILABLE_RongCloudIMKit
 #define COCOAPODS_VERSION_MAJOR_RongCloudIMKit 2
 #define COCOAPODS_VERSION_MINOR_RongCloudIMKit 2
-#define COCOAPODS_VERSION_PATCH_RongCloudIMKit 0
+#define COCOAPODS_VERSION_PATCH_RongCloudIMKit 9
 

@@ -1,10 +1,13 @@
 PODS:
-  - RongCloudIMKit (2.2.0)
+  - KxMenu (1)
+  - RongCloudIMKit (2.2.9)
 
 DEPENDENCIES:
+  - KxMenu
   - RongCloudIMKit
 
 SPEC CHECKSUMS:
-  RongCloudIMKit: ab05b526fb8c03ea8b467993d8b6f5b75d86210f
+  KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
+  RongCloudIMKit: 2a629ea29945569b2662f403c89a52040a887d2e
 
 COCOAPODS: 0.37.2

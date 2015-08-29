@@ -13,11 +13,37 @@ class ConversationListViewController: RCConversationListViewController {
     let conVC = RCConversationViewController()
 
     // 显示菜单
-    @IBAction func showMenu(sender: AnyObject) {
-        
+    @IBAction func showMenu(sender: UIBarButtonItem) {
+        var frame = sender.valueForKey("view")?.frame
+        frame?.origin.y = (frame?.origin.y)! + 30
+        let kxMenuItems = [
+            KxMenuItem("客服", image:UIImage(named: "serve"), target:self, action:"clickMenuServe"),
+            KxMenuItem("好友", image:UIImage(named: "contact"), target:self, action:"clickMenuContact")
+        ]
+        KxMenu.showMenuInView(self.view, fromRect: frame!, menuItems: kxMenuItems)
     }
+    
+    func clickMenuServe() {
+        print("点击客服")
+    }
+    
+    func clickMenuContact() {
+        print("点击好友")
+                // 代码跳转到私聊详情页面
+                let conVC = RCConversationViewController()
+                conVC.targetId = "noprom"
+                conVC.userName = "noprom"
+                conVC.conversationType = RCConversationType.ConversationType_PRIVATE
+                conVC.title = "noprom"
+        
+                self.navigationController?.pushViewController(conVC, animated: true)
+                // 隐藏底部tab
+                self.tabBarController?.tabBar.hidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
         appDelegate?.connectServer({ () -> Void in

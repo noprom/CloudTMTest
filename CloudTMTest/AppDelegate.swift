@@ -37,10 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
     
     func connectServer(completion:()-> Void) {
         // 查询保存的token
-        let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("kDeviceToken") as? String
-        
-        //  初始化融云模块
-        RCIM.sharedRCIM().initWithAppKey("p5tvi9dst0ot4", deviceToken: deviceTokenCache)
+        RCIM.sharedRCIM().initWithAppKey("p5tvi9dst0ot4")
         
         //  用token测试连接
         RCIM.sharedRCIM().connectWithToken("vG3qJ2oRhaRbU2orLofNLBvCsfV0IEBWQxMMac9/Ex/kusEyUgdPWYdfoxU13c31t873u7CzQ5JtifXz6ehzhg==", success: { (_) -> Void in
