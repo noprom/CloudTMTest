@@ -59,7 +59,7 @@
                     <navigationItem key="navigationItem" title="最近会话" id="vYV-Ip-rzz">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="D9W-hh-6rU">
                             <connections>
-                                <segue destination="ada-By-0lz" kind="show" id="ZAn-uO-AD3"/>
+                                <action selector="showMenu:" destination="pSu-ZG-Qcq" id="cdp-jg-eE7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -114,7 +114,7 @@
             <objects>
                 <tabBarController id="JOZ-Mi-Efs" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Yx7-Iz-Ttg">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="Yx7-Iz-Ttg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -213,7 +213,4 @@
         <image name="coversation" width="29" height="22"/>
         <image name="serve" width="23" height="22"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="2dA-QO-Fkd"/>
-    </inferredMetricsTieBreakers>
 </document>

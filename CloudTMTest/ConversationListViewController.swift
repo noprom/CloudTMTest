@@ -12,6 +12,10 @@ class ConversationListViewController: RCConversationListViewController {
 
     let conVC = RCConversationViewController()
 
+    // 显示菜单
+    @IBAction func showMenu(sender: AnyObject) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
