@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
     <scenes>
-        <!--会话界面-->
+        <!--私聊界面-->
         <scene sceneID="OW1-63-Aid">
             <objects>
-                <viewController id="ada-By-0lz" userLabel="会话界面" customClass="ConversationViewController" customModule="CloudTMTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ada-By-0lz" userLabel="私聊界面" customClass="ConversationViewController" customModule="CloudTMTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vcR-82-1aq"/>
                         <viewControllerLayoutGuide type="bottom" id="B5l-Ma-3TU"/>
@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="1321" y="-652"/>
         </scene>
-        <!--会话界面导航-->
+        <!--私聊界面导航-->
         <scene sceneID="ABF-q5-aVU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hzf-NL-jZt" userLabel="会话界面导航" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hzf-NL-jZt" userLabel="私聊界面导航" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="yY0-YZ-3Ro">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
