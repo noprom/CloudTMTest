@@ -14,13 +14,23 @@ class ConversationListViewController: RCConversationListViewController {
 
     // 显示菜单
     @IBAction func showMenu(sender: UIBarButtonItem) {
-        var frame = sender.valueForKey("view")?.frame
-        frame?.origin.y = (frame?.origin.y)! + 30
-        let kxMenuItems = [
-            KxMenuItem("客服", image:UIImage(named: "serve"), target:self, action:"clickMenuServe"),
-            KxMenuItem("好友", image:UIImage(named: "contact"), target:self, action:"clickMenuContact")
+//        // 使用KxMenu
+//        var frame = sender.valueForKey("view")?.frame
+//        frame?.origin.y = (frame?.origin.y)! + 30
+//        let kxMenuItems = [
+//            KxMenuItem("客服", image:UIImage(named: "serve"), target:self, action:"clickMenuServe"),
+//            KxMenuItem("好友", image:UIImage(named: "contact"), target:self, action:"clickMenuContact")
+//        ]
+//        KxMenu.showMenuInView(self.view, fromRect: frame!, menuItems: kxMenuItems)
+        
+        // 使用PopMenu
+        let items = [
+            MenuItem(title: "客服", iconName: "serve", glowColor: UIColor.redColor(), index: 0),
+            MenuItem(title: "联系人", iconName: "contact", glowColor: UIColor.blueColor(), index: 1),
+            MenuItem(title: "通讯录", iconName: "coversation", glowColor: UIColor.yellowColor(), index: 2),
+            MenuItem(title: "关于", iconName: "about", glowColor: UIColor.grayColor(), index: 3)
         ]
-        KxMenu.showMenuInView(self.view, fromRect: frame!, menuItems: kxMenuItems)
+        
     }
     
     func clickMenuServe() {

@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PopMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-XHRealTimeBlur.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D293F9FB7C43745CCAF1A36F</key>
+		<key>2CB83811BEE16790D5D47C4F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D9649452F683F4FDEE850BBB</key>
+		<key>46C1ED77EEE9F6310B028A41</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>80333DC3E19D49D0FB92B004</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E076EBD0134BBD9E2105E799</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFA65D9F0DA66FA718D6574E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
