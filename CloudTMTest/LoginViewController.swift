@@ -22,12 +22,22 @@ extension UIView {
 }
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginStackView: UIStackView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        // 登陆组由水平变为垂直
+        UIView.animateWithDuration(1) { () -> Void in
+            self.loginStackView.axis = UILayoutConstraintAxis.Vertical
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
