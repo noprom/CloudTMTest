@@ -30,7 +30,24 @@ class ConversationListViewController: RCConversationListViewController {
             MenuItem(title: "通讯录", iconName: "coversation", glowColor: UIColor.yellowColor(), index: 2),
             MenuItem(title: "关于", iconName: "about", glowColor: UIColor.grayColor(), index: 3)
         ]
+        let menu = PopMenu(frame: self.view.bounds, items: items)
+        menu.menuAnimationType = PopMenuAnimationType.Sina
+        if menu.isShowed {
+            return
+        }
+        menu.didSelectedItemCompletion = { (selectedItem: MenuItem!) -> Void in
+            
+            switch selectedItem.index {
+                case 0 :
+                    self.clickMenuContact()
+                default:
+                    print(selectedItem.title)
+            }
+        }
+        menu.showMenuAtView(self.view)
         
+        // 隐藏底部导航栏
+//        self.tabBarController?.tabBar.hidden = true
     }
     
     func clickMenuServe() {
@@ -39,21 +56,19 @@ class ConversationListViewController: RCConversationListViewController {
     
     func clickMenuContact() {
         print("点击好友")
-                // 代码跳转到私聊详情页面
-                let conVC = RCConversationViewController()
-                conVC.targetId = "noprom"
-                conVC.userName = "noprom"
-                conVC.conversationType = RCConversationType.ConversationType_PRIVATE
-                conVC.title = "noprom"
-        
-                self.navigationController?.pushViewController(conVC, animated: true)
-                // 隐藏底部tab
-                self.tabBarController?.tabBar.hidden = true
+        // 代码跳转到私聊详情页面
+        let conVC = RCConversationViewController()
+        conVC.targetId = "noprom"
+        conVC.userName = "noprom"
+        conVC.conversationType = RCConversationType.ConversationType_PRIVATE
+        conVC.title = "noprom"
+        self.navigationController?.pushViewController(conVC, animated: true)
+        // 隐藏底部tab
+        self.tabBarController?.tabBar.hidden = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
         appDelegate?.connectServer({ () -> Void in

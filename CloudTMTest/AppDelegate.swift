@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
             case "noprom":
                 print("＝＝＝＝＝noprom＝＝＝＝＝")
                 userInfo.name = "noprom"
-                userInfo.portraitUri = "http://p3.gexing.com/G1/M00/13/89/rBACE1JGVebiPiPmAAAS9SdWJFY114_200x200_3.jpg?recache=20131108"
+                userInfo.portraitUri = "http://p3.gexing.com/G1/M00/D0/6D/rBACFFL5nm3ygtgpAAAbCjPPEXA557_200x200_3.jpg?recache=20131108"
             case "noprom2":
                 userInfo.name = "noprom2"
                 userInfo.portraitUri = "http://img4.duitang.com/uploads/item/201407/20/20140720085149_zmhzh.jpeg"
@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource {
         RCIM.sharedRCIM().connectWithToken("vG3qJ2oRhaRbU2orLofNLBvCsfV0IEBWQxMMac9/Ex/kusEyUgdPWYdfoxU13c31t873u7CzQ5JtifXz6ehzhg==", success: { (_) -> Void in
                 print("连接成功1!")
                 // 当前登录的用户
-                let currentUser = RCUserInfo(userId: "noprom", name: "noprom", portrait: "http://p3.gexing.com/G1/M00/13/89/rBACE1JGVebiPiPmAAAS9SdWJFY114_200x200_3.jpg?recache=20131108")
+                let currentUser = RCUserInfo(userId: "noprom", name: "noprom", portrait: "http://p3.gexing.com/G1/M00/D0/6D/rBACFFL5nm3ygtgpAAAbCjPPEXA557_200x200_3.jpg?recache=20131108")
                 RCIMClient.sharedRCIMClient().currentUserInfo = currentUser
 
                 // 在主线程中执行

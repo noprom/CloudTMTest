@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8061276A1B919FC700B942A1 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806127691B919FC700B942A1 /* ConversationListViewController.swift */; };
+		806FCFE41B92F051004F3950 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FCFE31B92F051004F3950 /* LoginViewController.swift */; };
+		806FCFE61B92F237004F3950 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FCFE51B92F237004F3950 /* RoundImageView.swift */; };
 		808E21AB1B4CFFAB006B9507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */; };
 		808E21B01B4CFFAB006B9507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808E21AE1B4CFFAB006B9507 /* Main.storyboard */; };
 		808E21B21B4CFFAB006B9507 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808E21B11B4CFFAB006B9507 /* Images.xcassets */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		804A91CB1B4D0E290036ED2B /* CloudTMTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudTMTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		806127691B919FC700B942A1 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		806FCFE31B92F051004F3950 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		806FCFE51B92F237004F3950 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		808E21A51B4CFFAB006B9507 /* CloudTMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudTMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E21A91B4CFFAB006B9507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */,
+				806FCFE31B92F051004F3950 /* LoginViewController.swift */,
 				80B8BB241B58ED0400D2E98A /* ConversationViewController.swift */,
 				806127691B919FC700B942A1 /* ConversationListViewController.swift */,
 				808E21AE1B4CFFAB006B9507 /* Main.storyboard */,
@@ -107,6 +112,7 @@
 				808E21A81B4CFFAB006B9507 /* Supporting Files */,
 				808E21CA1B4D0848006B9507 /* Podfile */,
 				804A91CB1B4D0E290036ED2B /* CloudTMTest-Bridging-Header.h */,
+				806FCFE51B92F237004F3950 /* RoundImageView.swift */,
 			);
 			path = CloudTMTest;
 			sourceTree = "<group>";
@@ -282,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				806FCFE61B92F237004F3950 /* RoundImageView.swift in Sources */,
+				806FCFE41B92F051004F3950 /* LoginViewController.swift in Sources */,
 				8061276A1B919FC700B942A1 /* ConversationListViewController.swift in Sources */,
 				80B8BB251B58ED0400D2E98A /* ConversationViewController.swift in Sources */,
 				808E21AB1B4CFFAB006B9507 /* AppDelegate.swift in Sources */,
@@ -414,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CloudTMTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTMTest/CloudTMTest-Bridging-Header.h";
@@ -429,7 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CloudTMTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CloudTMTest/CloudTMTest-Bridging-Header.h";
