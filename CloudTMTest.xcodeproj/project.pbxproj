@@ -15,7 +15,6 @@
 		808E21B21B4CFFAB006B9507 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808E21B11B4CFFAB006B9507 /* Images.xcassets */; };
 		808E21B51B4CFFAB006B9507 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808E21B31B4CFFAB006B9507 /* LaunchScreen.xib */; };
 		808E21C11B4CFFAB006B9507 /* CloudTMTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E21C01B4CFFAB006B9507 /* CloudTMTestTests.swift */; };
-		808E21CB1B4D0848006B9507 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 808E21CA1B4D0848006B9507 /* Podfile */; };
 		80B8BB251B58ED0400D2E98A /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B8BB241B58ED0400D2E98A /* ConversationViewController.swift */; };
 		CEBD5B9E26C219AD26A5CEE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DCC6D2D82CB7397D47A8DB /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -44,7 +43,6 @@
 		808E21BA1B4CFFAB006B9507 /* CloudTMTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudTMTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		808E21BF1B4CFFAB006B9507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808E21C01B4CFFAB006B9507 /* CloudTMTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTMTestTests.swift; sourceTree = "<group>"; };
-		808E21CA1B4D0848006B9507 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		80B8BB241B58ED0400D2E98A /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		C1DCC6D2D82CB7397D47A8DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B682E2C02F8CFE038D2931 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 				808E21B11B4CFFAB006B9507 /* Images.xcassets */,
 				808E21B31B4CFFAB006B9507 /* LaunchScreen.xib */,
 				808E21A81B4CFFAB006B9507 /* Supporting Files */,
-				808E21CA1B4D0848006B9507 /* Podfile */,
 				804A91CB1B4D0E290036ED2B /* CloudTMTest-Bridging-Header.h */,
 				806FCFE51B92F237004F3950 /* RoundImageView.swift */,
 			);
@@ -236,7 +233,6 @@
 			files = (
 				808E21B01B4CFFAB006B9507 /* Main.storyboard in Resources */,
 				808E21B51B4CFFAB006B9507 /* LaunchScreen.xib in Resources */,
-				808E21CB1B4D0848006B9507 /* Podfile in Resources */,
 				808E21B21B4CFFAB006B9507 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

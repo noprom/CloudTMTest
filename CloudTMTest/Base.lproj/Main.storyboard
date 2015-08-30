@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cHy-QA-h2g">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -163,8 +162,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SdB-Nd-9kr" userLabel="背景">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="132"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SdB-Nd-9kr" userLabel="背景" customClass="JSAnimatedImagesView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar1" translatesAutoresizingMaskIntoConstraints="NO" id="w1Z-1M-mTP" customClass="RoundImageView" customModule="CloudTMTest" customModuleProvider="target">
@@ -188,7 +187,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNV-mJ-rwg" userLabel="Login Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNV-mJ-rwg" userLabel="Login Stack View">
                                 <rect key="frame" x="0.0" y="132" width="600" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="au0-S1-bnx">
@@ -209,7 +208,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vGk-17-0fs">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vGk-17-0fs">
                                 <rect key="frame" x="340" y="252" width="240" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自动登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr0-Nq-APM">
@@ -239,35 +238,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="SdB-Nd-9kr" secondAttribute="trailing" id="1pI-Ae-rAG"/>
                             <constraint firstItem="w1Z-1M-mTP" firstAttribute="centerX" secondItem="DA3-CD-G2Y" secondAttribute="centerX" id="732-ug-XOK"/>
                             <constraint firstAttribute="trailing" secondItem="SNV-mJ-rwg" secondAttribute="trailing" id="B9S-6n-TUL"/>
                             <constraint firstItem="SNV-mJ-rwg" firstAttribute="leading" secondItem="DA3-CD-G2Y" secondAttribute="leading" id="CBY-29-db7"/>
-                            <constraint firstItem="SdB-Nd-9kr" firstAttribute="leading" secondItem="DA3-CD-G2Y" secondAttribute="leading" id="G58-bh-pbg"/>
                             <constraint firstItem="SNV-mJ-rwg" firstAttribute="top" secondItem="w1Z-1M-mTP" secondAttribute="bottom" constant="32" id="Nge-i1-eFS"/>
                             <constraint firstItem="Mj1-n1-PIy" firstAttribute="top" secondItem="9w2-d5-4Or" secondAttribute="bottom" constant="40" id="REG-Uf-5JL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vGk-17-0fs" secondAttribute="trailing" id="SLl-9z-ITG"/>
                             <constraint firstItem="vGk-17-0fs" firstAttribute="leading" secondItem="DA3-CD-G2Y" secondAttribute="leadingMargin" id="Uc6-CE-RCd"/>
-                            <constraint firstItem="vGk-17-0fs" firstAttribute="top" secondItem="SNV-mJ-rwg" secondAttribute="bottom" constant="30" id="aw5-mi-7nR"/>
+                            <constraint firstItem="vGk-17-0fs" firstAttribute="top" secondItem="SNV-mJ-rwg" secondAttribute="bottom" constant="90" id="aw5-mi-7nR"/>
                             <constraint firstItem="9w2-d5-4Or" firstAttribute="leading" secondItem="DA3-CD-G2Y" secondAttribute="leadingMargin" id="buH-od-V1i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9w2-d5-4Or" secondAttribute="trailing" id="hBy-yZ-V01"/>
                             <constraint firstItem="w1Z-1M-mTP" firstAttribute="top" secondItem="Tij-r8-2XG" secondAttribute="bottom" id="jkS-t4-8EK"/>
-                            <constraint firstItem="SdB-Nd-9kr" firstAttribute="top" secondItem="DA3-CD-G2Y" secondAttribute="top" id="mop-Az-vfA"/>
                             <constraint firstItem="vGk-17-0fs" firstAttribute="width" secondItem="DA3-CD-G2Y" secondAttribute="width" multiplier="0.4" id="o8U-4t-4Tq"/>
-                            <constraint firstItem="SNV-mJ-rwg" firstAttribute="top" secondItem="SdB-Nd-9kr" secondAttribute="bottom" id="vA8-n0-cF4"/>
-                            <constraint firstItem="SdB-Nd-9kr" firstAttribute="leading" secondItem="DA3-CD-G2Y" secondAttribute="leading" id="wq3-bu-ZFp"/>
-                            <constraint firstAttribute="trailing" secondItem="SdB-Nd-9kr" secondAttribute="trailing" id="xVM-Di-b6e"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="G58-bh-pbg"/>
-                                <exclude reference="xVM-Di-b6e"/>
                                 <exclude reference="Uc6-CE-RCd"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="loginStackView" destination="SNV-mJ-rwg" id="qHH-eK-F6W"/>
+                        <outlet property="wallPaperImageView" destination="SdB-Nd-9kr" id="Kkq-0y-4Qp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYa-9d-PLI" userLabel="First Responder" sceneMemberID="firstResponder"/>

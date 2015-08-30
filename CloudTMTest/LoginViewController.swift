@@ -20,13 +20,15 @@ extension UIView {
         }
     }
 }
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, JSAnimatedImagesViewDataSource {
 
     @IBOutlet weak var loginStackView: UIStackView!
-
+    @IBOutlet weak var wallPaperImageView: JSAnimatedImagesView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.wallPaperImageView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -43,7 +45,15 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    // 轮播图
+    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+        return 3
+    }
+    
+    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+        return UIImage(named: "\(index + 1)")
+    }
+    
     /*
     // MARK: - Navigation
 

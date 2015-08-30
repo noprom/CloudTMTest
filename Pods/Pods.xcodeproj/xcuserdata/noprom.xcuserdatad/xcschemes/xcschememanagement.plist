@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-JSAnimatedImagesView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-KxMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MSWeakTimer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CB83811BEE16790D5D47C4F</key>
+		<key>08048CF2705CAEBB2B31B2DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>46C1ED77EEE9F6310B028A41</key>
+		<key>5ACD14F26DDCCBAEF8059CE1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80333DC3E19D49D0FB92B004</key>
+		<key>ABF4A52547DCA8247ABAE4F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E076EBD0134BBD9E2105E799</key>
+		<key>D00C00E13B7CA619E609321D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FFA65D9F0DA66FA718D6574E</key>
+		<key>D9DD0BAB8583AEA479448874</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA5A24E7C7592C66C54CED3F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3329FBC278E8C1C67F4DDF7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
