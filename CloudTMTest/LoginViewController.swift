@@ -29,9 +29,13 @@ class LoginViewController: UIViewController, JSAnimatedImagesViewDataSource {
         super.viewDidLoad()
 
         self.wallPaperImageView.dataSource = self
-        // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.hidden = true
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         // 登陆组由水平变为垂直
