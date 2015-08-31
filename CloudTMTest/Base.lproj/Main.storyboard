@@ -168,12 +168,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGL-Xj-8un">
-                                                    <rect key="frame" x="0.0" y="13" width="600" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGL-Xj-8un">
+                                                    <rect key="frame" x="30" y="7" width="540" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="EwX-8v-U5h"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cGL-Xj-8un" firstAttribute="top" secondItem="qhJ-fl-Psp" secondAttribute="topMargin" constant="5" id="Fsa-UR-3AC"/>
+                                                <constraint firstItem="cGL-Xj-8un" firstAttribute="centerY" secondItem="qhJ-fl-Psp" secondAttribute="centerY" id="T2g-MD-PB2"/>
+                                                <constraint firstItem="cGL-Xj-8un" firstAttribute="leading" secondItem="qhJ-fl-Psp" secondAttribute="leading" constant="30" id="dYd-xT-vn3"/>
+                                                <constraint firstAttribute="trailing" secondItem="cGL-Xj-8un" secondAttribute="trailing" constant="30" id="dnd-dc-uVo"/>
+                                                <constraint firstAttribute="trailing" secondItem="cGL-Xj-8un" secondAttribute="trailing" constant="30" id="hG5-am-eMf"/>
+                                                <constraint firstItem="cGL-Xj-8un" firstAttribute="top" secondItem="qhJ-fl-Psp" secondAttribute="top" constant="15" id="sZl-pO-QXm"/>
+                                                <constraint firstItem="cGL-Xj-8un" firstAttribute="leading" secondItem="qhJ-fl-Psp" secondAttribute="leading" constant="30" id="wMV-3v-39A"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Fsa-UR-3AC"/>
+                                                    <exclude reference="dYd-xT-vn3"/>
+                                                    <exclude reference="dnd-dc-uVo"/>
+                                                    <exclude reference="sZl-pO-QXm"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hNg-vZ-aFb" userLabel="密码">
@@ -183,12 +203,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXG-QE-R5w">
-                                                    <rect key="frame" x="0.0" y="6" width="600" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXG-QE-R5w">
+                                                    <rect key="frame" x="30" y="7" width="540" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="w1G-hP-pf6"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sXG-QE-R5w" firstAttribute="leading" secondItem="sK2-Wz-ywd" secondAttribute="leading" constant="30" id="967-Z1-rPM"/>
+                                                <constraint firstAttribute="trailing" secondItem="sXG-QE-R5w" secondAttribute="trailing" constant="30" id="9pN-R9-F1n"/>
+                                                <constraint firstAttribute="trailing" secondItem="sXG-QE-R5w" secondAttribute="trailing" constant="30" id="Ef2-32-cNR"/>
+                                                <constraint firstItem="sXG-QE-R5w" firstAttribute="centerY" secondItem="sK2-Wz-ywd" secondAttribute="centerY" id="hAH-kB-dgV"/>
+                                                <constraint firstItem="sXG-QE-R5w" firstAttribute="top" secondItem="sK2-Wz-ywd" secondAttribute="top" constant="5" id="j0Z-US-9be"/>
+                                                <constraint firstItem="sXG-QE-R5w" firstAttribute="leading" secondItem="sK2-Wz-ywd" secondAttribute="leading" constant="30" id="sj6-Uu-ljf"/>
+                                                <constraint firstItem="sXG-QE-R5w" firstAttribute="top" secondItem="sK2-Wz-ywd" secondAttribute="top" constant="5" id="zNM-2h-Jaf"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="9pN-R9-F1n"/>
+                                                    <exclude reference="j0Z-US-9be"/>
+                                                    <exclude reference="sj6-Uu-ljf"/>
+                                                    <exclude reference="zNM-2h-Jaf"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DVw-gw-rCb" userLabel="邮箱">
@@ -198,12 +238,112 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckD-ev-ftm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckD-ev-ftm">
+                                                    <rect key="frame" x="30" y="7" width="540" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="gva-eK-1Q9"/>
+                                                        <constraint firstAttribute="height" constant="30" id="qJt-Pf-pUb"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="qJt-Pf-pUb"/>
+                                                        </mask>
+                                                    </variation>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ckD-ev-ftm" firstAttribute="leading" secondItem="A9c-q3-qAI" secondAttribute="leading" constant="30" id="1Ys-5x-L6n"/>
+                                                <constraint firstItem="ckD-ev-ftm" firstAttribute="leading" secondItem="A9c-q3-qAI" secondAttribute="leading" constant="30" id="TAI-T4-ldP"/>
+                                                <constraint firstItem="ckD-ev-ftm" firstAttribute="top" secondItem="A9c-q3-qAI" secondAttribute="top" id="b8a-ol-dLd"/>
+                                                <constraint firstItem="ckD-ev-ftm" firstAttribute="top" secondItem="A9c-q3-qAI" secondAttribute="top" id="kIf-4K-Gab"/>
+                                                <constraint firstItem="ckD-ev-ftm" firstAttribute="centerY" secondItem="A9c-q3-qAI" secondAttribute="centerY" id="m1Z-y4-A3F"/>
+                                                <constraint firstAttribute="trailing" secondItem="ckD-ev-ftm" secondAttribute="trailing" constant="30" id="qJ3-YR-Zne"/>
+                                                <constraint firstAttribute="trailing" secondItem="ckD-ev-ftm" secondAttribute="trailing" constant="30" id="tNe-HS-z5u"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="1Ys-5x-L6n"/>
+                                                    <exclude reference="b8a-ol-dLd"/>
+                                                    <exclude reference="kIf-4K-Gab"/>
+                                                    <exclude reference="qJ3-YR-Zne"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="必填" id="8ei-ZE-mT2" userLabel="选填">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xs1-Gy-86Z" userLabel="密码提示">
+                                        <rect key="frame" x="0.0" y="287.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xs1-Gy-86Z" id="2Zd-4N-3uv">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vWI-o3-KKP" userLabel="密码提示">
+                                                    <rect key="frame" x="30" y="7" width="540" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="2yB-PJ-fvH"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="vWI-o3-KKP" secondAttribute="trailing" constant="30" id="8bR-c2-tg8"/>
+                                                <constraint firstItem="vWI-o3-KKP" firstAttribute="centerY" secondItem="2Zd-4N-3uv" secondAttribute="centerY" id="Eyd-a9-rMX"/>
+                                                <constraint firstItem="vWI-o3-KKP" firstAttribute="top" secondItem="2Zd-4N-3uv" secondAttribute="topMargin" constant="5" id="OUR-8M-bnk"/>
+                                                <constraint firstItem="vWI-o3-KKP" firstAttribute="leading" secondItem="2Zd-4N-3uv" secondAttribute="leading" constant="30" id="d3z-N8-8sw"/>
+                                                <constraint firstAttribute="trailing" secondItem="vWI-o3-KKP" secondAttribute="trailing" constant="30" id="hQE-tt-Mqy"/>
+                                                <constraint firstItem="vWI-o3-KKP" firstAttribute="leading" secondItem="2Zd-4N-3uv" secondAttribute="leading" constant="30" id="nDA-Hq-geJ"/>
+                                                <constraint firstItem="vWI-o3-KKP" firstAttribute="top" secondItem="2Zd-4N-3uv" secondAttribute="top" constant="15" id="oCy-Bt-1vd"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="OUR-8M-bnk"/>
+                                                    <exclude reference="d3z-N8-8sw"/>
+                                                    <exclude reference="hQE-tt-Mqy"/>
+                                                    <exclude reference="oCy-Bt-1vd"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xzk-18-RHH" userLabel="密码提示问题答案">
+                                        <rect key="frame" x="0.0" y="331.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xzk-18-RHH" id="aQA-dS-k7z">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题答案" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZp-GM-Lxx" userLabel="密码提示问题答案">
+                                                    <rect key="frame" x="30" y="7" width="540" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="6HG-5c-a5g"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="wZp-GM-Lxx" secondAttribute="trailing" constant="30" id="GQF-CQ-OKS"/>
+                                                <constraint firstAttribute="trailing" secondItem="wZp-GM-Lxx" secondAttribute="trailing" constant="30" id="Ib6-Fk-4bh"/>
+                                                <constraint firstItem="wZp-GM-Lxx" firstAttribute="leading" secondItem="aQA-dS-k7z" secondAttribute="leading" constant="30" id="Qgr-gR-bnU"/>
+                                                <constraint firstItem="wZp-GM-Lxx" firstAttribute="centerY" secondItem="aQA-dS-k7z" secondAttribute="centerY" id="dbG-Hx-xLy"/>
+                                                <constraint firstItem="wZp-GM-Lxx" firstAttribute="leading" secondItem="aQA-dS-k7z" secondAttribute="leading" constant="30" id="dm3-I6-7ie"/>
+                                                <constraint firstItem="wZp-GM-Lxx" firstAttribute="top" secondItem="aQA-dS-k7z" secondAttribute="top" constant="5" id="mLb-p9-38H"/>
+                                                <constraint firstItem="wZp-GM-Lxx" firstAttribute="top" secondItem="aQA-dS-k7z" secondAttribute="top" constant="5" id="rAH-yj-IBV"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Ib6-Fk-4bh"/>
+                                                    <exclude reference="rAH-yj-IBV"/>
+                                                    <exclude reference="dm3-I6-7ie"/>
+                                                    <exclude reference="mLb-p9-38H"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -214,6 +354,10 @@
                             <outlet property="delegate" destination="Gmi-VW-cCY" id="yD7-cl-UNC"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="n9D-7t-sJV"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGo-dh-jBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
