@@ -39,7 +39,7 @@ class RegTableViewController: UITableViewController {
 //        }
         for textField in regTextFields {
             if textField.text!.isEmpty {
-                print("文本框为空")
+                self.errorNotice("内容不能为空")
             }
         }
     }
