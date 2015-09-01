@@ -10,12 +10,11 @@ import UIKit
 
 class RegTableViewController: UITableViewController {
 
-    @IBOutlet weak var user: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var question: UITextField!
-    @IBOutlet weak var answer: UITextField!
-    
+    @IBOutlet weak var user: UITextBox!
+    @IBOutlet weak var password: UITextBox!
+    @IBOutlet weak var email: UITextBox!
+    @IBOutlet weak var question: UITextBox!
+    @IBOutlet weak var answer: UITextBox!
     @IBOutlet var regTextFields: [UITextField]!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,54 @@ class RegTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "checkRequired")
+         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "doneButtonTap")
+        
+        // 格式验证
+        self.navigationItem.rightBarButtonItem?.enabled = false
+        
+        // 用户名验证
+        let v1 = AJWValidator(type: AJWValidatorType.String)
+        v1.addValidationToEnsureMinimumLength(3, invalidMessage: "至少3个字符")
+        v1.addValidationToEnsureMaximumLength(10, invalidMessage: "最多10个字符")
+        self.user.ajw_attachValidator(v1)
+        v1.validatorStateChangedHandler = {(newState: AJWValidatorState) -> Void in
+            switch newState {
+                case AJWValidatorState.ValidationStateValid:
+                    self.user.highlightState = UITextBoxHighlightState.Default
+                default:
+                    let errorMsg = v1.errorMessages.first as? String
+                    self.user.highlightState = UITextBoxHighlightState.Wrong(errorMsg!)
+            }
+        }
+        
+        // 密码验证
+        let v2 = AJWValidator(type: AJWValidatorType.String)
+        v2.addValidationToEnsureMinimumLength(6, invalidMessage: "至少6个字符")
+        v2.addValidationToEnsureMaximumLength(15, invalidMessage: "最多15个字符")
+        self.password.ajw_attachValidator(v2)
+        v2.validatorStateChangedHandler = {(newState: AJWValidatorState) -> Void in
+            switch newState {
+            case AJWValidatorState.ValidationStateValid:
+                self.password.highlightState = UITextBoxHighlightState.Default
+            default:
+                let errorMsg = v2.errorMessages.first as? String
+                self.password.highlightState = UITextBoxHighlightState.Wrong(errorMsg!)
+            }
+        }
+        
+        // 邮箱验证
+        let v3 = AJWValidator(type: AJWValidatorType.String)
+        v3.addValidationToEnsureValidEmailWithInvalidMessage("Email格式不正确")
+        self.email.ajw_attachValidator(v3)
+        v3.validatorStateChangedHandler = {(newState: AJWValidatorState) -> Void in
+            switch newState {
+            case AJWValidatorState.ValidationStateValid:
+                self.email.highlightState = UITextBoxHighlightState.Default
+            default:
+                let errorMsg = v3.errorMessages.first as? String
+                self.email.highlightState = UITextBoxHighlightState.Wrong(errorMsg!)
+            }
+        }
     }
     
     func checkRequired() {

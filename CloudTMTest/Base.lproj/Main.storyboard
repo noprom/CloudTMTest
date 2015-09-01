@@ -360,10 +360,10 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="answer" destination="xzk-18-RHH" id="XEq-cq-Xz4"/>
-                        <outlet property="email" destination="DVw-gw-rCb" id="yhk-76-z3h"/>
-                        <outlet property="password" destination="hNg-vZ-aFb" id="fmJ-Ja-p1V"/>
+                        <outlet property="email" destination="ckD-ev-ftm" id="N3Z-oB-V9I"/>
+                        <outlet property="password" destination="sXG-QE-R5w" id="Vke-9A-URM"/>
                         <outlet property="question" destination="Xs1-Gy-86Z" id="Qbm-ff-Vs8"/>
-                        <outlet property="user" destination="lc6-mz-N3j" id="qzy-Ka-Bto"/>
+                        <outlet property="user" destination="cGL-Xj-8un" id="sia-FP-teA"/>
                         <outletCollection property="regTextFields" destination="cGL-Xj-8un" collectionClass="NSMutableArray" id="tbh-m3-IVX"/>
                         <outletCollection property="regTextFields" destination="sXG-QE-R5w" collectionClass="NSMutableArray" id="zhx-4z-Gsd"/>
                         <outletCollection property="regTextFields" destination="ckD-ev-ftm" collectionClass="NSMutableArray" id="fFN-OF-nMs"/>

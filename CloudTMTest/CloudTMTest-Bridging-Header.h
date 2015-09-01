@@ -7,3 +7,4 @@
 #import <PopMenu/PopMenu.h>
 #import <JSAnimatedImagesView/JSAnimatedImagesView.h>
 #import "UIView+ViewRecursion.h"
+#import <AJWValidator/AJWValidator.h>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08048CF2705CAEBB2B31B2DF"
+               BlueprintIdentifier = "4A276F89B1E4801C45F0C9D5"
                BuildableName = "libPods-MSWeakTimer.a"
                BlueprintName = "Pods-MSWeakTimer"
                ReferencedContainer = "container:Pods.xcodeproj">
