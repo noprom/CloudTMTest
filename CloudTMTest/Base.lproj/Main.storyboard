@@ -168,7 +168,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGL-Xj-8un">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGL-Xj-8un" customClass="UITextBox" customModule="CloudTMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="EwX-8v-U5h"/>
@@ -203,7 +203,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXG-QE-R5w">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXG-QE-R5w" customClass="UITextBox" customModule="CloudTMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="w1G-hP-pf6"/>
@@ -238,7 +238,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckD-ev-ftm">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckD-ev-ftm" customClass="UITextBox" customModule="CloudTMTest" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="gva-eK-1Q9"/>

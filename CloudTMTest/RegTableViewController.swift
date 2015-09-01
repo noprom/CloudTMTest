@@ -42,6 +42,14 @@ class RegTableViewController: UITableViewController {
                 self.errorNotice("内容不能为空")
             }
         }
+        
+        // 邮箱格式验证
+        let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
+        guard predicate.evaluateWithObject(email.text) else {
+            self.errorNotice("邮箱格式不对!")
+            return
+        }
     }
 
     func doneButtonTap() {
