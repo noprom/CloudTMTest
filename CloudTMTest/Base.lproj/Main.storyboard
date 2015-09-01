@@ -154,7 +154,7 @@
         <scene sceneID="r73-6o-SIl">
             <objects>
                 <tableViewController id="Gmi-VW-cCY" userLabel="注册" customClass="RegTableViewController" customModule="CloudTMTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9vk-xo-M3C">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9vk-xo-M3C">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -339,9 +339,9 @@
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="Ib6-Fk-4bh"/>
-                                                    <exclude reference="rAH-yj-IBV"/>
                                                     <exclude reference="dm3-I6-7ie"/>
                                                     <exclude reference="mLb-p9-38H"/>
+                                                    <exclude reference="rAH-yj-IBV"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -358,6 +358,16 @@
                         <barButtonItem title="Item" id="n9D-7t-sJV"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answer" destination="xzk-18-RHH" id="XEq-cq-Xz4"/>
+                        <outlet property="email" destination="DVw-gw-rCb" id="yhk-76-z3h"/>
+                        <outlet property="password" destination="hNg-vZ-aFb" id="fmJ-Ja-p1V"/>
+                        <outlet property="question" destination="Xs1-Gy-86Z" id="Qbm-ff-Vs8"/>
+                        <outlet property="user" destination="lc6-mz-N3j" id="qzy-Ka-Bto"/>
+                        <outletCollection property="regTextFields" destination="cGL-Xj-8un" collectionClass="NSMutableArray" id="tbh-m3-IVX"/>
+                        <outletCollection property="regTextFields" destination="sXG-QE-R5w" collectionClass="NSMutableArray" id="zhx-4z-Gsd"/>
+                        <outletCollection property="regTextFields" destination="ckD-ev-ftm" collectionClass="NSMutableArray" id="fFN-OF-nMs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGo-dh-jBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

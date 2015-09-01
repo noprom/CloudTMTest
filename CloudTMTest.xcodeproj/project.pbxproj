@@ -17,6 +17,7 @@
 		808E21C11B4CFFAB006B9507 /* CloudTMTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E21C01B4CFFAB006B9507 /* CloudTMTestTests.swift */; };
 		809526921B944D3100CD732E /* RegTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809526911B944D3100CD732E /* RegTableViewController.swift */; };
 		80B8BB251B58ED0400D2E98A /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B8BB241B58ED0400D2E98A /* ConversationViewController.swift */; };
+		80D613B01B95874F0058E503 /* UIView+ViewRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D613AF1B95874F0058E503 /* UIView+ViewRecursion.m */; };
 		CEBD5B9E26C219AD26A5CEE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DCC6D2D82CB7397D47A8DB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,8 @@
 		808E21C01B4CFFAB006B9507 /* CloudTMTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTMTestTests.swift; sourceTree = "<group>"; };
 		809526911B944D3100CD732E /* RegTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegTableViewController.swift; sourceTree = "<group>"; };
 		80B8BB241B58ED0400D2E98A /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		80D613AE1B95874F0058E503 /* UIView+ViewRecursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewRecursion.h"; sourceTree = "<group>"; };
+		80D613AF1B95874F0058E503 /* UIView+ViewRecursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewRecursion.m"; sourceTree = "<group>"; };
 		C1DCC6D2D82CB7397D47A8DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B682E2C02F8CFE038D2931 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E3920E8D27393E836D385AE5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 		808E21A71B4CFFAB006B9507 /* CloudTMTest */ = {
 			isa = PBXGroup;
 			children = (
+				80D613B11B9588230058E503 /* Vender */,
 				808E21AA1B4CFFAB006B9507 /* AppDelegate.swift */,
 				806FCFE31B92F051004F3950 /* LoginViewController.swift */,
 				809526911B944D3100CD732E /* RegTableViewController.swift */,
@@ -140,6 +144,15 @@
 				808E21BF1B4CFFAB006B9507 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80D613B11B9588230058E503 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				80D613AE1B95874F0058E503 /* UIView+ViewRecursion.h */,
+				80D613AF1B95874F0058E503 /* UIView+ViewRecursion.m */,
+			);
+			name = Vender;
 			sourceTree = "<group>";
 		};
 		DAA5D1F15AA0ECFE68B560A7 /* Frameworks */ = {
@@ -289,6 +302,7 @@
 			files = (
 				806FCFE61B92F237004F3950 /* RoundImageView.swift in Sources */,
 				806FCFE41B92F051004F3950 /* LoginViewController.swift in Sources */,
+				80D613B01B95874F0058E503 /* UIView+ViewRecursion.m in Sources */,
 				8061276A1B919FC700B942A1 /* ConversationListViewController.swift in Sources */,
 				80B8BB251B58ED0400D2E98A /* ConversationViewController.swift in Sources */,
 				809526921B944D3100CD732E /* RegTableViewController.swift in Sources */,

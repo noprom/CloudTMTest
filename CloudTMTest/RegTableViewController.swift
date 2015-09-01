@@ -10,6 +10,13 @@ import UIKit
 
 class RegTableViewController: UITableViewController {
 
+    @IBOutlet weak var user: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var question: UITextField!
+    @IBOutlet weak var answer: UITextField!
+    
+    @IBOutlet var regTextFields: [UITextField]!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +26,22 @@ class RegTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "doneButtonTap")
+         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "checkRequired")
+    }
+    
+    func checkRequired() {
+//        self.view.runBlockOnAllSubviews { (subView:UIView!) -> Void in
+//            if let subView = subView as? UITextField {
+//                if subView.text!.isEmpty {
+//                    print("文本框为空")
+//                }
+//            }
+//        }
+        for textField in regTextFields {
+            if textField.text!.isEmpty {
+                print("文本框为空")
+            }
+        }
     }
 
     func doneButtonTap() {
